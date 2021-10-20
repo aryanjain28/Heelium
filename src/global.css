@@ -73,6 +73,14 @@ body {
   width: auto;
 }
 
+.company-logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  /* border: #000000 solid; */
+}
+
 .green-tick {
   display: inline;
   margin: 0 auto;
@@ -196,5 +204,33 @@ body {
 }
 
 .radio-button {
+  cursor: pointer;
+}
+
+.login-page-card {
+  margin: 60px 20px 20px 20px !important;
+  color: #000000;
+  background-color: #385e47 !important;
+  border-radius: 20px !important;
+}
+
+.login-page-card-body {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 20px !important;
+}
+
+.login-button {
+  display: block !important;
+}
+
+.forgot-password {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center;
+  color: #fff;
   cursor: pointer;
 }
