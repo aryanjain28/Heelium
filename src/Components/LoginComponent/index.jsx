@@ -12,8 +12,15 @@ export const LoginComponent = () => {
     }
 
     useEffect(() => {
-        console.info("Background changed");
         document.body.style.setProperty('background-color', '#385e47', 'important');
+        document.body.style.setProperty('height', "auto", "important");
+    }, []);
+
+    useEffect(() => {
+        return () => {
+            document.body.style.removeProperty('background-color');
+            document.body.style.removeProperty('height');
+        }
     }, []);
 
     return (
