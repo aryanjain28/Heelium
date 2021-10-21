@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AppHeaderContainer } from '../../Container/AppHeaderContainer';
 import {  CardComponent } from './Card';
 
 export const ItemListing = (props) => {
@@ -8,12 +9,13 @@ export const ItemListing = (props) => {
 
     return (
         data.map((obj, index) => {
-            return <CardComponent 
+            return (
+            <CardComponent 
                         id={`${index}`}
                         selectedCard={selectedCard} 
                         productDetails={obj}  
                         setSelectedCard={setSelectedCard}
-                    />
+            />)
         })
     );
 }

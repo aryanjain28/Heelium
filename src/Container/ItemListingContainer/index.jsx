@@ -55,8 +55,58 @@ const data = [
         productSubCategory: [],
         productBody: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.",
         lastUpdateAt: "June 2010",
-        lastUpdateBy: "XYZ",
+        lastUpdateBy: "",
         currentNumber: "12343"
+    },
+    {
+        productId: "6",
+        productImage: "NA",
+        productTitle: "Vest",
+        productSubCategory: [],
+        productBody: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.",
+        lastUpdateAt: "June 2010",
+        lastUpdateBy: "",
+        currentNumber: "3454"
+    },
+    {
+        productId: "3",
+        productImage: "NA",
+        productTitle: "Bandana",
+        productSubCategory: [],
+        productBody: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.",
+        lastUpdateAt: "June 2010",
+        lastUpdateBy: "",
+        currentNumber: "2345"
+    },
+    {
+        productId: "4",
+        productImage: "NA",
+        productTitle: "Shoes",
+        productSubCategory: [],
+        productBody: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.",
+        lastUpdateAt: "June 2010",
+        lastUpdateBy: "",
+        currentNumber: "545"
+    },
+    {
+        productId: "5",
+        productImage: "NA",
+        productTitle: "Streching Band",
+        productSubCategory: [],
+        productBody: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.",
+        lastUpdateAt: "June 2010",
+        lastUpdateBy: "",
+        currentNumber: "12343"
+    },
+    {
+        productId: "6",
+        productImage: "NA",
+        productTitle: "Vest",
+        productSubCategory: [],
+        productBody: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.",
+        lastUpdateAt: "June 2010",
+        lastUpdateBy: "",
+        currentNumber: "3454"
     },
     {
         productId: "6",

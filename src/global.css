@@ -14,14 +14,14 @@ body {
   font-family: "Poppins", sans-serif !important;
   line-height: 1.7;
   position: relative;
-  background-color: #fcfaf8 !important;
+  background-color: #375e45 !important;
   height: 100vh;
 }
 
 .header {
-  box-shadow: 0px 8px 6px -6px #000000;
-  background-color: #385e47 !important;
-  /* background: linear-gradient(to right bottom, #53647c, #53647c10) !important; */
+  box-shadow: 0px 8px 6px -6px #1e2124;
+  /* background-color: #385e47 !important; */
+  background-color: #1e2124;
   color: #fff !important;
 }
 
@@ -36,9 +36,9 @@ body {
 }
 
 .product-footer-btn {
-  color: white;
   border-radius: 10px !important;
-  background: linear-gradient(to right bottom, #00b30f, #00d80b9d) !important;
+  background: #1e212400 !important;
+  /* background: linear-gradient(to right bottom, #1e212400, #1e212400) !important; */
   width: 100% !important;
   height: max-content !important;
   border-radius: 0 0 10px 10px !important;
@@ -97,7 +97,7 @@ body {
 .card-container {
   color: white;
   border-radius: 10px !important;
-  background: linear-gradient(to right bottom, #2999f5, #1859d1);
+  background: linear-gradient(to right bottom, #323941, #061018);
 }
 
 .card-container p {
@@ -114,13 +114,15 @@ body {
 
 .card-body {
   padding: 1rem 1rem 1rem 1rem !important ;
-  background: linear-gradient(to right bottom, #323941, #061018);
+  background: #17191c;
+  /* background: linear-gradient(to right bottom, #323941, #061018); */
   /* border-radius: 0 0 10px 10px !important; */
 }
 
 .card-body-with-round-bottom {
   padding: 1rem 1rem 1rem 1rem !important ;
-  background: linear-gradient(to right bottom, #323941, #061018);
+  background: #17191c;
+  /* background: linear-gradient(to right bottom, #323941, #061018); */
   border-radius: 0 0 10px 10px !important;
 }
 
@@ -210,7 +212,7 @@ body {
 .login-page-card {
   margin: 60px 20px 20px 20px !important;
   color: #000000;
-  background-color: #385e47 !important;
+  background-color: #375e45 !important;
   border-radius: 20px !important;
 }
 

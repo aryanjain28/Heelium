@@ -5,10 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
+import { Router, Switch, Route } from 'react-router-dom';
+import AppLayoutContainer from './Container/AppLayoutContainer/AppLayoutContainer';
+import history from "./history.js";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router history={history}>
+    <Switch>
+      <Route path="/" component={AppLayoutContainer} />
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

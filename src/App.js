@@ -1,14 +1,16 @@
 import './global.css';
-import { AppHeaderContainer } from "./Container/AppHeaderContainer"
-import { AppBodyContainer } from './Container/AppBodyContainer';
-import { LoginContainer } from './Container/LoginContainer';
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import Routes from "./Routes"
 
 function App() {
   return (
     <div className="App">
-      <LoginContainer />
-      {/* <AppHeaderContainer />
-      <AppBodyContainer /> */}
+      <Router>
+        <Switch>
+          <Route path="/" component={Routes} />
+        </Switch>
+      </Router>
     </div>
   );
 }

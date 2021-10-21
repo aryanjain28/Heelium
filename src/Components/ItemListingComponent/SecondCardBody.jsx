@@ -39,8 +39,9 @@ export const SecondCardBody = (props) => {
 
     return (
         <CardBody>
-            <p className="pt-3">Man</p>
-            <p className="pb-3">Ankle - White</p>
+            <p className="">Man</p>
+            <p className="">Ankle - White</p>
+            <p className="pb-3">Current: 1000</p>
             
             <div className="mx-2">
                 <div className="d-flex">
@@ -54,7 +55,7 @@ export const SecondCardBody = (props) => {
                     />
                     <Button className="secondary" onClick={handlePlusClick}><h1 className="p-0 m-0">+</h1></Button>
                 </div>
-                <Button className="mt-3 w-100" color="info" disabled={disableSubmit}>Submit</Button>
+                <Button className="mt-3 w-100" color="info" disabled={disableSubmit}>IN</Button>
             </div>
 
 

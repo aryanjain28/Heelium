@@ -1,27 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import heeliumLogo from "../../assets/images/heeliumLogo.png"
-import {Button, Card, CardBody, CardTitle, Input, Label } from "reactstrap"
-import { LoginFormComponent } from "./LoginFormComponent";
-import { toast } from "react-toastify";
+import {Button, Card, CardBody, Input, Label } from "reactstrap"
+import { Redirect, useHistory } from "react-router";
+import { withRouter } from "react-router-dom";
+import { ROUTES } from "../../appConstant";
 
-export const LoginComponent = () => {
+// import { toast } from "react-toastify";
+
+const LoginComponent = () => {
+
+    const history = useHistory();
+    const [ redirectToInventoryManagement, setRedirectToInventoryManagement ] = useState(false);
 
     const handleForgotPwd = () => {
-        console.log("Clicked");
-        toast.error("Please contact admin for new password!", { autoClose: false })
+        // toast.error("Please contact admin for new password!", { autoClose: false })
     }
 
-    useEffect(() => {
-        document.body.style.setProperty('background-color', '#385e47', 'important');
-        document.body.style.setProperty('height', "auto", "important");
-    }, []);
+    const handleLoginBtn = () => {
 
-    useEffect(() => {
-        return () => {
-            document.body.style.removeProperty('background-color');
-            document.body.style.removeProperty('height');
-        }
-    }, []);
+        /**
+         * 1. Get credentials and hit API
+         * 2. If success, Recieve back token and save loginDetails and token in localstorage
+         */
+
+        /**TODO: Will be removed later */
+        history.push(`/${ROUTES.inventoryManagement}`)
+    }
 
     return (
         <Card className="login-page-card">
@@ -57,6 +61,7 @@ export const LoginComponent = () => {
                 <Button 
                     className="login-button mx-auto mt-4 w-100"
                     color="success"
+                    onClick={handleLoginBtn}
                 >
                     Log In
                 </Button>
@@ -68,8 +73,9 @@ export const LoginComponent = () => {
                 >
                     Forgot Password?
                 </Label>
-
             </CardBody>
         </Card>
     )
 }
+
+export default withRouter(LoginComponent);
