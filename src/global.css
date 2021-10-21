@@ -227,7 +227,8 @@ body {
   border-radius: 20px !important;
 }
 
-.login-page-card-body {
+.login-page-card-body,
+.manage-users-card-body {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -235,8 +236,16 @@ body {
   border-radius: 20px !important;
 }
 
-.login-button {
+.login-button,
+.add-user-button {
   display: block !important;
+}
+
+.manage-users-card {
+  margin: 20px !important;
+  color: #000000;
+  background-color: #375e45 !important;
+  border-radius: 20px !important;
 }
 
 .forgot-password {

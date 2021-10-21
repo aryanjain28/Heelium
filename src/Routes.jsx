@@ -8,6 +8,7 @@ import RouteWithSubRoutes from "./routeHelper";
 
 import { InventoryManagementContainer } from './Container/InventoryManagementContainer';
 import { LoginContainer } from './Container/LoginContainer';
+import { ManageUsersContainer } from "./Container/ManageUsersContainer";
 
 
 export const routes = [
@@ -22,6 +23,12 @@ export const routes = [
     exact: true,
     component: InventoryManagementContainer,
     key: 2,
+  },
+  {
+    path: `${ROOT_URL_PATH}${ROUTES.manageUsers}`,
+    exact: true,
+    component: ManageUsersContainer,
+    key: 3,
   },
 ];
 

@@ -7,11 +7,20 @@ import {
   DropdownItem,
   Dropdown
 } from 'reactstrap';
+import { useHistory } from "react-router";
+
+import { ROUTES } from "../../appConstant";
 
 export const AppHeader = () => {
+  
+  const history = useHistory()
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(prevState => !prevState);
+
+  const handleManageUsersDropdownItem = () => {
+    history.push(`/${ROUTES.manageUsers}`)
+  }
 
   return (
     <div className="header">
@@ -30,9 +39,25 @@ export const AppHeader = () => {
           </DropdownToggle>
 
           <DropdownMenu right>
-            <DropdownItem>Another Action</DropdownItem>
-            <DropdownItem>Another Action</DropdownItem>
-            <DropdownItem>Another Action</DropdownItem>
+            <DropdownItem
+              onClick={handleManageUsersDropdownItem}
+            >
+              Manage Users
+            </DropdownItem>
+            
+            <DropdownItem>
+              Manage Products
+            </DropdownItem>
+
+            <DropdownItem divider/>
+
+            <DropdownItem>
+              Settings
+            </DropdownItem>
+
+            <DropdownItem>
+              Log Out
+            </DropdownItem>
           </DropdownMenu>
 
         </Dropdown>

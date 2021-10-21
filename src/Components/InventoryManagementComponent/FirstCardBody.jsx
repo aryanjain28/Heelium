@@ -43,12 +43,12 @@ export const FirstCardBody = (props) => {
                     return (
                     <div key={index} className="d-flex my-2">
                         <Input
-                        className="my-auto radio-button" 
-                        size="10px" 
-                        type="radio" 
-                        name={`radioBtn`}
-                        checked={`${index}` === selectedSubCategory}
-                        onClick={() => setSelectedSubCategory(`${index}`)}
+                            className="my-auto radio-button" 
+                            size="10px" 
+                            type="radio" 
+                            name={`radioBtn`}
+                            checked={`${index}` === selectedSubCategory}
+                            onClick={() => setSelectedSubCategory(`${index}`)}
                         />
                         <p className="my-auto">{prodSubCatObj.name}</p>
                     </div>)
