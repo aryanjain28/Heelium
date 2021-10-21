@@ -8,14 +8,19 @@ export const ItemListing = (props) => {
     const [selectedCard, setSelectedCard] = useState(null);
 
     return (
-        data.map((obj, index) => {
-            return (
-            <CardComponent 
+        <>
+            <AppHeaderContainer />
+            {
+                data.map((obj, index) => {
+                    return (
+                    <CardComponent 
                         id={`${index}`}
                         selectedCard={selectedCard} 
                         productDetails={obj}  
                         setSelectedCard={setSelectedCard}
-            />)
-        })
+                    />)
+                })
+            }
+        </>
     );
 }

@@ -17,10 +17,10 @@ const AppLayoutContainer = () => {
     const location = useLocation();
 
     return (
-        <Router}>
-            {location.pathname !== "/login" &&
+        <Router>
+            {/* {location.pathname !== "/login" &&
                 <AppHeaderContainer />
-            }
+            } */}
             <Switch>
                 <Redirect exact from="/" to={`/${ROUTES.login}`}/>
                 {routes.map((route) => {
