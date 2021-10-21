@@ -9,6 +9,9 @@ import RouteWithSubRoutes from "./routeHelper";
 import { InventoryManagementContainer } from './Container/InventoryManagementContainer';
 import { LoginContainer } from './Container/LoginContainer';
 import { ManageUsersContainer } from "./Container/ManageUsersContainer";
+import { ManageProductsContainer } from "./Container/ManageProductsContainer";
+import { AddNewProductContainer } from "./Container/AddNewProductContainer";
+import { UpdateExistingProductContainer } from "./Container/UpdateExistingProductContainer"
 
 
 export const routes = [
@@ -29,6 +32,24 @@ export const routes = [
     exact: true,
     component: ManageUsersContainer,
     key: 3,
+  },
+  {
+    path: `${ROOT_URL_PATH}${ROUTES.manageProducts}`,
+    exact: true,
+    component: ManageProductsContainer,
+    key: 4,
+  },
+  {
+    path: `${ROOT_URL_PATH}${ROUTES.addNewProduct}`,
+    exact: true,
+    component: AddNewProductContainer,
+    key: 5,
+  },
+  {
+    path: `${ROOT_URL_PATH}${ROUTES.updateProduct}`,
+    exact: true,
+    component: UpdateExistingProductContainer,
+    key: 6,
   },
 ];
 

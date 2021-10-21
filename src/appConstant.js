@@ -3,7 +3,10 @@ export const ROOT_URL_PATH = "/";
 export const ROUTES = {
     login: "login",
     manageUsers: "manage-users",
+    manageProducts: "manage-products",
     inventoryManagement: "inventory-management",
+    addNewProduct: "add-new-product",
+    updateProduct: "update-existing-product",
 }
 
 export const ROUTE_NOT_TO_SHOW_APPHEADER = {
@@ -24,6 +27,7 @@ export const data = [
             {name: "Sock Category 4"},
             {name: "Type of Sock Category 5"},
         ],
+        colors: ["red", "white", "green"],
         productBody: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.",
         lastUpdateAt: "June 2010",
         lastUpdateBy: "Aryan Jain",

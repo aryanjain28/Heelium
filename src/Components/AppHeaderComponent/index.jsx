@@ -22,6 +22,25 @@ export const AppHeader = () => {
     history.push(`/${ROUTES.manageUsers}`)
   }
 
+  const handleLogoutDropdownItem = () => {
+    /**
+     * 1. API hit for logout -> Will change active state + logout time
+     * 2. Delete local storage
+     * 3. Update reducer with isLoggedIn: false
+     * 4. Redirect to login page
+     */
+
+    history.push(`/${ROUTES.login}`)
+  }
+
+  const handleManageProductsDropdownItem = () => {
+    /**
+     * 1. Redirect to next page
+     *  
+     */ 
+    history.push(`/${ROUTES.manageProducts}`)
+  }
+
   return (
     <div className="header">
       <Navbar className="d-flex px-4 py-2" expand="md">
@@ -45,17 +64,27 @@ export const AppHeader = () => {
               Manage Users
             </DropdownItem>
             
-            <DropdownItem>
+            <DropdownItem
+              onClick={handleManageProductsDropdownItem}
+            >
               Manage Products
+            </DropdownItem>
+
+            <DropdownItem>
+              Report
             </DropdownItem>
 
             <DropdownItem divider/>
 
-            <DropdownItem>
+            <DropdownItem
+              disabled
+            >
               Settings
             </DropdownItem>
 
-            <DropdownItem>
+            <DropdownItem
+              onClick={handleLogoutDropdownItem}
+            >
               Log Out
             </DropdownItem>
           </DropdownMenu>
