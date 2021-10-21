@@ -10,6 +10,7 @@ export const ColorSelection = (props) => {
             {
                 colorsArr.map((color, index) => {
                     return <ColoredCircle 
+                                key={index}
                                 id={index} 
                                 color={`#${color}`} 
                                 isSelected={isSelected === `${index}`}

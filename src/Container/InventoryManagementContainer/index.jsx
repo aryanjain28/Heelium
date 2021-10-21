@@ -1,6 +1,7 @@
 import React from "react";
-import { ItemListingContainer } from '../ItemListingContainer';
+import { data } from "../../appConstant"
+import { InventoryManagementComponent } from "../../Components/InventoryManagementComponent";
 
 export const InventoryManagementContainer = () => {
-    return <ItemListingContainer />
+    return <InventoryManagementComponent data={data} />
 }
