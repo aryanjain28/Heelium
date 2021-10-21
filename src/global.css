@@ -51,7 +51,7 @@ body {
 }
 
 .user-details {
-  margin-top: 6px;
+  padding: 5px 0px 0px 0px !important;
 }
 
 .profile-image-container {
@@ -73,6 +73,16 @@ body {
   width: auto;
 }
 
+.profile-drop-down {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  align-items: center !important;
+  text-align: center !important;
+  align-content: center !important;
+}
+
 .company-logo-image {
   display: block;
   margin-left: auto;
@@ -90,8 +100,9 @@ body {
 }
 
 .user-role {
-  font-size: 9px;
+  font-size: 10px;
   margin: 4px 0 0 0 !important;
+  color: #ffffff !important;
 }
 
 .card-container {
