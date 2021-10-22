@@ -174,7 +174,7 @@ body {
 }
 
 .product-heading {
-  width: 80%;
+  width: 100%;
 }
 
 .colored-circle-container {
@@ -282,4 +282,11 @@ body {
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
     1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
   /* text-shadow: 0 0 2px #fff; */
+}
+
+.operations-icons {
+  /* margin: auto !important; */
+  margin-left: auto !important;
+  margin-bottom: auto !important;
+  margin-top: auto !important;
 }
