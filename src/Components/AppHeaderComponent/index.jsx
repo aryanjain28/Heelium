@@ -41,6 +41,10 @@ export const AppHeader = () => {
     history.push(`/${ROUTES.manageProducts}`)
   }
 
+  const handleViewProductsDropdownItem = () => {
+    history.push(`/${ROUTES.inventoryManagement}`)
+  }
+
   return (
     <div className="header">
       <Navbar className="d-flex px-4 py-2" expand="md">
@@ -62,6 +66,12 @@ export const AppHeader = () => {
               onClick={handleManageUsersDropdownItem}
             >
               Manage Users
+            </DropdownItem>
+
+            <DropdownItem
+              onClick={handleViewProductsDropdownItem}
+            >
+              View Products
             </DropdownItem>
             
             <DropdownItem

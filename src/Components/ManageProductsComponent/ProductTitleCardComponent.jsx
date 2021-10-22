@@ -11,15 +11,17 @@ export const ProductTitleCardComponent = (props) => {
 
     const history = useHistory();
 
-    const handleCardClick = (clickedCardId) => {
-        console.log("Card Clicked - ", clickedCardId);
-
+    const handleProductUpdateClick = (clickedCardId) => {
         history.push(`/${ROUTES.updateProduct}`);
+    }
+
+    const handleProductDeleteClick = (clickedCardId) => {
+      // show modal and confirm
     }
 
     return (
           <div href={`#${productTitle}`} id={`#${productTitle}`} className="m-3 card-container">
-            <div className="card-title" onClick={() => handleCardClick(`${id}`)}>
+            <div className="card-title">
               <div className="d-flex">
                 <div className="product-heading">
                   
@@ -31,8 +33,8 @@ export const ProductTitleCardComponent = (props) => {
                     </div>
 
                     <div className="d-flex ml-auto operations-icons">
-                      <img className="" src={updateIcon} height="20px" />
-                      <img className="mx-3" src={deleteIcon} height="20px" />
+                      <img className="" onClick={() => handleProductUpdateClick(`${id}`)} src={updateIcon} height="20px" />
+                      <img className="mx-4" onClick={() => handleProductDeleteClick(`${id}`)} src={deleteIcon} height="20px" />
                     </div>
                   </div>
                 </div>
