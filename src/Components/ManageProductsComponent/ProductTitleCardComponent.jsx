@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Collapse, Card } from 'reactstrap';
+import { Button, Collapse, Card, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { useHistory } from "react-router-dom";
 import { ROUTES } from '../../appConstant';
 import deleteIcon from "../../assets/icons/deleteBinIcon.png";
@@ -9,17 +9,42 @@ export const ProductTitleCardComponent = (props) => {
     const { id, selectedCard, setSelectedCard, productDetails : 
       { productTitle, productBody, lastUpdateBy, lastUpdateAt, currentNumber, productSubCategory } } = props;
 
+
     const history = useHistory();
+    const [ confirmationModalIsOpen,setConfirmationModalIsOpen ] = useState(false);
 
     const handleProductUpdateClick = (clickedCardId) => {
         history.push(`/${ROUTES.updateProduct}`);
     }
 
+    const toggleModal = () => setConfirmationModalIsOpen(!confirmationModalIsOpen);
+
     const handleProductDeleteClick = (clickedCardId) => {
       // show modal and confirm
+      toggleModal();
+    }
+
+    const modalSuccessBtnHandle = () => {
+      /**
+       * 1. delete from db  -> API call
+       */
+      toggleModal();
     }
 
     return (
+
+        <>
+          <Modal isOpen={confirmationModalIsOpen}>
+            <ModalHeader>Confirmation</ModalHeader>
+            <ModalBody>
+              Are you sure you want to delete this product?
+            </ModalBody>
+            <ModalFooter>
+              <Button color="danger" onClick={modalSuccessBtnHandle}>Yes</Button>{" "}
+              <Button color="secondary" onClick={toggleModal}>No</Button>     
+            </ModalFooter>
+          </Modal>
+        
           <div href={`#${productTitle}`} id={`#${productTitle}`} className="m-3 card-container">
             <div className="card-title">
               <div className="d-flex">
@@ -41,6 +66,8 @@ export const ProductTitleCardComponent = (props) => {
               </div>
             </div>
         </div>
+
+      </>
     );
 }
 
