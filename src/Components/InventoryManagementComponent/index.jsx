@@ -10,18 +10,20 @@ export const InventoryManagementComponent = (props) => {
     return (
         <>
             <AppHeaderContainer />
-            {
-                data.map((dataObj, index) => {
-                    return (
-                        <ProductCardComponent 
-                            key={index}
-                            id={`${index}`}
-                            selectedCard={selectedCard} 
-                            productDetails={dataObj}  
-                            setSelectedCard={setSelectedCard}
-                        />)
-                })
-            }
+            <div style={{paddingTop: "20px", paddingBottom: "100px"}}>
+                {
+                    data.map((dataObj, index) => {
+                        return (
+                            <ProductCardComponent 
+                                key={index}
+                                id={`${index}`}
+                                selectedCard={selectedCard} 
+                                productDetails={dataObj}  
+                                setSelectedCard={setSelectedCard}
+                            />)
+                    })
+                }
+            </div>
         </>
     );
 }

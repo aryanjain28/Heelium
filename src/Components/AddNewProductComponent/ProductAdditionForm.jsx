@@ -157,7 +157,7 @@ export const ProductAdditionForm = (props) => {
                 
 
                 <div className="d-flex justify-content-between mb-4">
-                    <Button className="add-more-btn p-1" color="primary" onClick={handleAddMoreColor}>+ Add More Color</Button>
+                    <Button className="add-more-btn p-1" color="primary" onClick={handleAddMoreColor}>+ Add More</Button>
                     {/* <Button className="" color="success"> Finish</Button> */}
                 </div>
 

@@ -221,7 +221,9 @@ body {
 }
 
 .login-page-card {
-  margin: 60px 20px 20px 20px !important;
+  margin: auto 20px 20px 20px !important;
+  padding-top: 40px !important;
+  padding-bottom: 50% !important;
   color: #000000;
   background-color: #375e45 !important;
   border-radius: 20px !important;
@@ -232,6 +234,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 35% !important;
   width: 100%;
   border-radius: 20px !important;
 }
@@ -250,6 +253,7 @@ body {
 
 .forgot-password {
   display: block !important;
+  padding-top: 20px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center;

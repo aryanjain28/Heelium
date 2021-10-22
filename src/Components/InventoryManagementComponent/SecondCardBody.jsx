@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, CardBody, Input, Toast } from "reactstrap";
 
 export const SecondCardBody = (props) => {
@@ -7,22 +7,22 @@ export const SecondCardBody = (props) => {
 
     const value = 10;
     const [totalValue, setTotalValue] = useState(currentValue);
-    const [ counterValue, setCounterValue ] = useState(0);
+    const [counterValue, setCounterValue] = useState(0);
     const [disableSubmit, setDisableSubmit] = useState(false);
-
+    
     const handlePlusClick = () => {
-        let additionValue = parseInt(counterValue);
-        setCounterValue(additionValue + 1);
-        setTotalValue(prevValue => parseInt(prevValue) + 1);
+        let newValueAfterAdd = parseInt(counterValue) + 1;
+        setCounterValue(newValueAfterAdd);
+        setTotalValue(currentValue + newValueAfterAdd);
     }
 
     const handleMinusClick = () => {
-        let subtractionValue = parseInt(counterValue);
-        if (subtractionValue <= 0) {
+        let newValueAfterSub = parseInt(counterValue) - 1;
+        if (newValueAfterSub <= 0) {
             return;
         }
-        setCounterValue(subtractionValue - 1);
-        setTotalValue(prevValue => parseInt(prevValue) - 1);
+        setCounterValue(newValueAfterSub);
+        setTotalValue(currentValue - newValueAfterSub);
     }
 
     const handleChange = (valueToUpdate) => {
@@ -35,6 +35,7 @@ export const SecondCardBody = (props) => {
         }else {
             setDisableSubmit(false);
         }
+
     }
 
     const handleOnBlur = () => {}
