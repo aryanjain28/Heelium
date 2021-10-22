@@ -221,9 +221,9 @@ body {
 }
 
 .login-page-card {
-  margin: auto 20px 20px 20px !important;
-  padding-top: 40px !important;
-  padding-bottom: 50% !important;
+  margin: 60px 20px 20px 20px !important;
+  /* padding-top: 40px !important;
+  padding-bottom: 50% !important; */
   color: #000000;
   background-color: #375e45 !important;
   border-radius: 20px !important;
